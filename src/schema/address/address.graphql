@@ -1,0 +1,17 @@
+type Address {
+  street: String!
+  city: String!
+  state: String!
+  zipcode: String!
+}
+
+input AddressInput {
+  street: String!
+  city: String!
+  state: String!
+  zipcode: String!
+}
+
+type Mutation {
+  createAddress(username: String!, address: AddressInput!): Address!
+}
